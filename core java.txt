@@ -1,0 +1,100 @@
+//copy the content of one file to another.
+psvm(String ar[])
+{
+  byte[] b=new byte[100];
+  int size=b.length;
+  int read=0;
+  int count=0;
+  try(FileInputStream fs=new FileInputStream(ar[0]);
+    FileOutputStream ft=new FileOutputStream(ar[1]);
+	{
+           while(fs.read(b)!=-1)   
+		{
+		     if(read<size)
+		     {
+		       fs.write(b,0,read);
+		     }	
+			count=count+read;
+			sopln("count="+count);
+ 		}
+	 }
+  catch(IO Exception ex)
+    { 
+  	ex.printStackTrace();
+    }
+  }
+
+
+
+//accept the person details create a person og out of these details store this obj in the file
+class Person
+{
+  String fname;
+  String lname;
+  int age;
+public String getFname()
+  {
+   return fname;
+  }
+public void setFname(String fname)
+{
+  this.fname=fname;
+}
+public String getLname()
+  {
+   return lname;
+  }
+public void setLname(String lname)
+{
+  this.lname=lname;
+}
+public int Age()
+  {
+   return age;
+  }
+public void setAge(int age)
+{
+  this.age=age;
+}
+public String toString()
+{
+ StringBuffer sb=new StringBuffer();
+  sb.append(fname);
+  sb.append("\n");
+  sb.append(lname);
+  sb.append("\n");
+  sb.append(age);
+  sb.append("\n");
+  return sb.toString();
+ }
+}
+public class ObjectIODemo
+{
+ public void WriteObject(String fname)
+{
+  ObjectOutputStream=null;
+  Scanner sc=new Scanner(System.in);
+  System.out.println("enter fname");
+  String myfname=sc.nextline();
+  System.out.println("enter lname");
+  String mylname=sc.nextline();
+  System.out.println("enter age");
+  String myage=sc.nextInt();
+  Person p= new Person();
+  p.setfname(myname);
+  p.setlname(lastname);
+  p.setage(a);
+  try
+{
+  ObjectOutputStream=new ObjectOutputStream(new FileOutputStream(fname));
+  ObjectWriteObject(p);
+}
+catch(IOException ex)
+ {
+   (ex.toString);
+ }
+psvm
+{
+  ObjectIODemo od=new ObjectIODemo();
+  out.WriteOBject("path name");
+}

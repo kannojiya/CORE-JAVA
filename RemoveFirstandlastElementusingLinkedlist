@@ -1,0 +1,19 @@
+package remove.firstandlast.elementusing.linkedlist;
+import java.util.*;
+public class RemoveFirstandlastElementusingLinkedlist 
+{
+    public static void main(String[] args) 
+    {
+       LinkedList<String> ll=new LinkedList<String>();
+         ll.add("MEENU");   
+         ll.add("BRANDY");
+         ll.add("SUJAL");
+         System.out.println("show my normal element:"+ll);
+         Object ob=ll.removeFirst();
+         System.out.println("shoow my first element:"+ob);
+         Object ob1=ll.removeLast();
+          System.out.println("shoow my last element:"+ob1);
+           System.out.println("shoow my after performing operations element:"+ll);
+    }
+    
+}

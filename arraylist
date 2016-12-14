@@ -1,0 +1,31 @@
+package javaapplication28;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.List;
+
+public class JavaApplication28 {
+public static void main(String[] args)throws IOException
+    {
+       InputStreamReader is=new InputStreamReader(System.in);
+       BufferedReader br=new BufferedReader(is);
+       System.out.println("total number of elements to be added in arraylist:");
+       int totnum=Integer.parseInt(br.readLine());
+       String data[]=new String[totnum];
+       for(int i=0;i<totnum;i++)
+       {
+           data[i]=br.readLine();
+       }
+       List list=Arrays.asList(data);
+      for(Object li:list)
+      {
+          String mydata=(String)li;
+          System.out.println(mydata+"");
+      
+       }
+       
+    }
+    
+}

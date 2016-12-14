@@ -1,0 +1,18 @@
+package linkedlist.reverse;
+
+import java.util.*;
+
+public class swap {
+
+    public static void main(String[] args) {
+       LinkedList<String> al=new LinkedList<String>();
+       al.add("Meenu");
+       al.add("Lalman");
+       al.add("kannojiya");
+       System.out.println("before reverse"+al);
+       Collections.swap(al, 1, 0);
+       {
+           System.out.println("After reverse"+al);
+       }
+}
+}

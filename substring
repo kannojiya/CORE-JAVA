@@ -1,0 +1,11 @@
+package javaapplication12;
+
+public class JavaApplication12 {
+
+    public static void main(String[] args) {
+       String st="Meenu Kannojiya";
+       System.out.println(st.substring(5,8));
+       System.out.println(st.substring(9));
+    }
+    
+}

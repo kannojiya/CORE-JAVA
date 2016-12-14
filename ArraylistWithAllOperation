@@ -1,0 +1,45 @@
+package arraylist.with.all.operation;
+
+import java.util.*;
+class UserDefineStudent
+{
+    String name;
+    Integer number;
+    UserDefineStudent(String name,int number)
+    {
+      this.name=name;
+      this.number=number;
+    }
+    
+}
+
+public class ArraylistWithAllOperation {
+    public static void main(String[] args) 
+    {
+       UserDefineStudent s1=new  UserDefineStudent("SUJAL",23);  
+       UserDefineStudent s2=new  UserDefineStudent("BRANDY",21);    
+       System.out.println("s1");
+       System.out.println("s2");  
+       ArrayList<String>al=new ArrayList<String>();
+       al.add("MEENU");
+       al.add("LALMAN");
+       al.add("KANOJIYA");
+       System.out.println("Show My String:"+al);
+       ArrayList<Integer>al1=new ArrayList<Integer>();
+       al1.add(7);
+       al1.add(07);
+       al1.add(007);
+       System.out.println("Show My Ineteger:"+al1);
+       al1.removeAll(al1);
+       System.out.println("Show My Integer After removing the elements of al1.."+al1);
+       Iterator it=al.iterator();
+       while(it.hasNext())
+       {
+         System.out.println(it.next());
+       }
+       
+       for(Integer itr:al1)
+           System.out.println("al1"+al1);
+           
+    }
+}

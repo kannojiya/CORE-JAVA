@@ -1,0 +1,21 @@
+package comparearrlist.with.linlist;
+
+import java.util.*;
+
+public class CompareArrlistWithLinlist {
+    public static void main(String[] args) {
+       ArrayList<String> al=new ArrayList<String>();
+       al.add("MEENU");
+       al.add("LALMAN");
+       al.add("KANNOJIYA");
+       System.out.println("Show My String:"+al);
+       
+       
+       LinkedList<Integer> ll=new LinkedList<Integer>();
+       ll.add(5);
+       ll.add(6);
+       ll.add(9);
+       System.out.println("Show My Integer:"+ll);
+    }
+    
+}

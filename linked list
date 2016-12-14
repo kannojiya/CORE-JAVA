@@ -1,0 +1,23 @@
+
+package check.linkedelement;
+
+import java.util.*;
+
+public class CheckLinkedelement {
+
+    public static void main(String[] args) 
+    {
+      LinkedList <String> ll=new LinkedList<String>();
+      ll.add("Meenu");
+      ll.add("Kannojiya");
+      ll.add("brandy");
+      System.out.println("show me elements:");
+      if(ll.contains("Meenu")) {
+       System.out.println("Element Meenu is present in List");
+    } 
+      else {
+       System.out.println("List doesn't have element Meenu");
+     }
+    
+    }
+}
